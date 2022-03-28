@@ -49,9 +49,10 @@ const Characters = () => {
 
     return (
         <div className='cotainer-characters'>
+            <div className='section-nav'>
             
             <h1>Pokedex</h1>
-            <p>Bienvenido {userName}, aquí puedes encontrar tus pokemones favoritos. ATRAPALOS YA!</p>
+            <p>Bienvenido {userName}, aquí puedes encontrar tus pokemones favoritos. <span><b><i>ATRAPALOS YA!</i></b></span></p>
             <div className='select'>
                 <select onChange={handleType}>
                     <option>Selecciona por tipo</option>
@@ -73,7 +74,10 @@ const Characters = () => {
                     onChange={e => setPokemonName(e.target.value)} 
                 />
                 <button>Buscar</button>
+        
             </form>
+            </div>
+            
             <ul className='character-list'>{
                 charactersPaginated.map(character => (
                    <CharacterCard 
@@ -85,13 +89,13 @@ const Characters = () => {
             <button className="pages-buttons"
             onClick={() => setPage(page-1)}
             disabled = {page <= 1}>
-                Pagina previa
+                Prev
             </button>
                {page}/{totalPages}
             <button className="pages-buttons"
             onClick={() => setPage(page+1)}
             disabled = {page >= totalPages}>
-                Pagina Siguiente
+                Next
             </button>
             <div className='section-buttons'>
                 {pagesNumbers.map(page => (

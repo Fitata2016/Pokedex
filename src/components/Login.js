@@ -30,7 +30,7 @@ const Login = () => {
           value={userName}
           onChange={e => setUserName(e.target.value)}
         />
-        <button>Submit</button>
+        <button>Enviar</button>
       </form>
     </div>
   );
