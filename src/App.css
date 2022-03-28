@@ -1,38 +1,52 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .App {
+  font-family: sans-serif;
   text-align: center;
+  padding: 70px;
+}
+.character-card{
+  background-color: #f3f1f1;
+  margin: 20px;
+  list-style: none;
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+}
+.character-card a{
+text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.character-card h3{
+  color: #000;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.character-list{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: left;
 }
-
-.App-link {
-  color: #61dafb;
+.container-login input{
+    margin-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cotainer-characters h1{
+  margin-bottom: 15px;
+}
+form.input-container{
+  margin:20px;
+}
+form.input-container button{
+  background-color: crimson;
+  width: 55px;
+  height: 30px;
+  border-radius: 5px;
+  border: 3px #000 solid;
+  color: #ffffff;
+}
+.character-info .sections{
+  background-color: #f3f1f1;
+  margin: 10px;
 }
