@@ -81,21 +81,23 @@ const Characters = () => {
                    key= {character.url ? character.url :character} />
                 ))
             }
-            </ul> 
-            <button 
+            </ul > 
+            <button className="pages-buttons"
             onClick={() => setPage(page-1)}
             disabled = {page <= 1}>
                 Pagina previa
             </button>
                {page}/{totalPages}
-            <button 
+            <button className="pages-buttons"
             onClick={() => setPage(page+1)}
             disabled = {page >= totalPages}>
                 Pagina Siguiente
             </button>
-            <div>
+            <div className='section-buttons'>
                 {pagesNumbers.map(page => (
-                <button onClick={() => setPage(page)} key={page}>
+                <button className="pages-number-buttons" 
+                    onClick={() => setPage(page)} 
+                    key={page}>
                     {page}
                 </button>
                 ))}

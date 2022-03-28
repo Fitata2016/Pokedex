@@ -15,7 +15,7 @@
   list-style: none;
   width: 120px;
   border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+  box-shadow: 2px 2px 8px rgba(189, 45, 45, 0.3);
 }
 .character-card a{
 text-decoration: none;
@@ -49,4 +49,27 @@ form.input-container button{
 .character-info .sections{
   background-color: #f3f1f1;
   margin: 10px;
+}
+.pages-buttons{
+  background-color: crimson;
+  color: #ffffff;
+  border: 3px #000 solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+.pages-number-buttons{
+  background-color: crimson;
+  color: #ffffff;
+  border: 2px #000 solid;
+  padding: 5px;
+  padding-left: 1px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  margin: .5px;
+}
+.section-buttons{
+  margin-top: 5px;
+  text-align: left;
 }
