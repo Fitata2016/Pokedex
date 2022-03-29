@@ -18,7 +18,7 @@ const CharacterInfo = () => {
     return (
         <div className='character-info'>
             <section className='sections'>
-                <img src={character.sprites?.front_default} alt="" />
+                <img src={character.sprites?.other?.home?.front_default} alt="" />
                 <p>Peso: {character.weight}</p>
                 <p>Altura: {character.height}</p>
                 <h1>{character.name}</h1>

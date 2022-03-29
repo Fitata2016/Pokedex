@@ -10,13 +10,13 @@ const CharacterCard = ({characterUrl}) => {
         axios.get(characterUrl)
         .then(res => setCharacter(res.data))
     },[characterUrl])
-
+    console.log(character)
     return (
         <li className='character-card'>
         <Link to={`/characters/${character.id}`}>
             <h3>{character.name}</h3>
             <p>Peso: {character.weight}</p>
-            <img src={character.sprites?.front_default} alt="" />
+            <img src={character.sprites?.other?.dream_world?.front_default} alt="" />
             {/* <p>{character?.types[0]?.type?.name}</p> */}
         </Link>
     </li>
